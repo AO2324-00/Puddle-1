@@ -38,7 +38,6 @@
 - **PuddleNoticer.destination_directory** 通知を記録する際の保存先ディレクトリパス。
 
 ### 静的メソッド
-- **PuddleNoticer.Request** リクエストを通知する。
 - **PuddleNoticer.Info** 情報を通知する。
 - **PuddleNoticer.Warning** 警告を通知する。
 - **PuddleNoticer.Error** エラーを通知して処理を停止する。
@@ -64,42 +63,26 @@
 
 ### 静的メソッド
 
-#### PuddleNoticer.Request(module_name: string, notice_name: string, variables?: Variables)
-> リクエストを通知する。
+#### PuddleNoticer.Info(message: string)
+> 任意の情報を通知する。
 > 
 > ##### 引数
-> - **module_name** モジュール名。
-> - **notice_name** 通知名称。
-> - **variables** 変数とその値を格納した連想配列。例：`{ var: "Variable" }`
+> - **message** メッセージ。
 > ##### 戻り値
 > - 実際に通知されたテキスト。
 
-#### PuddleNoticer.Info(module_name: string, notice_name: string, variables?: Variables)
-> 情報を通知する。
+#### PuddleNoticer.Warning(message: string)
+> 任意の警告を通知する。
 > 
 > ##### 引数
-> - **module_name** モジュール名。
-> - **notice_name** 通知名称。
-> - **variables** 変数とその値を格納した連想配列。例：`{ var: "Variable" }`
+> - **message** メッセージ。
 > ##### 戻り値
 > - 実際に通知されたテキスト。
 
-#### PuddleNoticer.Warning(module_name: string, notice_name: string, variables?: Variables)
-> 警告を通知する。
+#### PuddleNoticer.Error(message: string)
+> 任意のエラーを通知して処理を停止する。
 > 
 > ##### 引数
-> - **module_name** モジュール名。
-> - **notice_name** 通知名称。
-> - **variables** 変数とその値を格納した連想配列。例：`{ var: "Variable" }`
-> ##### 戻り値
-> - 実際に通知されたテキスト。
-
-#### PuddleNoticer.Error(module_name: string, notice_name: string, variables?: Variables)
-> エラーを通知して処理を停止する。
-> 
-> ##### 引数
-> - **module_name** モジュール名。
-> - **notice_name** 通知名称。
-> - **variables** 変数とその値を格納した連想配列。例：`{ var: "Variable" }`
+> - **message** メッセージ。
 > ##### 戻り値
 > - 実際に通知されたテキスト。

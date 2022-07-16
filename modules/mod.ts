@@ -5,3 +5,8 @@ export const Notice: { [key: string]: any } = {
     "IO": Notice_IO,
     "DB": Notice_DB,
 }
+
+export type Variables = { [key: string]: any; };
+
+export * from "./IO/PuddleNoticer.ts";
+export * from "./IO/PuddleParser.ts";
