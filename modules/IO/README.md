@@ -8,7 +8,7 @@
 # ファイルの読み書き
 
 ## 概要
-
+ファイルの読み書きはDeno標準のAPIで提供されています。
 - [**Deno.readFile**](#denoreadfile) ファイルの全内容をバイト配列として読み込む。
 - [**Deno.readFileSync**](#denoreadfilesync) ファイルの全内容をバイト配列として同期的に読み込む。
 - [**Deno.readTextFile**](#denoreadtextfile) 非同期でファイルの全内容をutf8エンコードされた文字列として読み込む。
