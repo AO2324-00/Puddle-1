@@ -80,7 +80,7 @@
 > - 実際に通知されたテキスト。
 > ```typescript
 > PuddleNoticer.Info("メッセージ");
-> // [Info] メッセージ (Sun Apr 17 20XX 00:00:00 GMT+0900 (GMT+09:00))
+> // [Info] メッセージ (Sun Apr 01 20XX 00:00:00 GMT+0900 (GMT+09:00))
 > ```
 
 #### PuddleNoticer.Warning(message: string)
@@ -92,7 +92,7 @@
 > - 実際に通知されたテキスト。
 > ```typescript
 > PuddleNoticer.Info("メッセージ");
-> // [Warning] メッセージ (Sun Apr 17 20XX 00:00:00 GMT+0900 (GMT+09:00))
+> // [Warning] メッセージ (Sun Apr 01 20XX 00:00:00 GMT+0900 (GMT+09:00))
 > ```
 
 #### PuddleNoticer.Error(message: string)
@@ -104,5 +104,5 @@
 > - 実際に通知されたテキスト。
 > ```typescript
 > PuddleNoticer.Info("メッセージ");
-> // [Error] メッセージ (Sun Apr 17 20XX 00:00:00 GMT+0900 (GMT+09:00))
+> // [Error] メッセージ (Sun Apr 01 20XX 00:00:00 GMT+0900 (GMT+09:00))
 > ```
