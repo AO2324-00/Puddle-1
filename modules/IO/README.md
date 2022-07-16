@@ -25,7 +25,6 @@
 > console.log(text); // ABCDEFGHI
 > ```
 
----
 <br>
 
 # クラス PuddleNoticer
