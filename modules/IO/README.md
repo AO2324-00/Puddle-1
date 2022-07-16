@@ -9,7 +9,7 @@
 
 ### 静的メソッド
 
-> #### PuddleParser.assignToVariables(template_text: string, variables: Variables)
+#### PuddleParser.assignToVariables(template_text: string, variables: Variables)
 > 変数を含む文字列に値を代入する。
 > 
 > ##### 引数

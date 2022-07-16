@@ -22,7 +22,7 @@
 
 ### 静的メソッド
 
-> #### PuddleDB.USE(file_path: string, schema: Schema)
+#### PuddleDB.USE(file_path: string, schema: Schema)
 > JSONファイルの読み込みとスキーマの指定を行う。
 > 
 > ##### 引数
@@ -41,15 +41,15 @@
 
 ### ゲッター
 
-> #### .file_path
+#### .file_path
 > データが記録されているJSONファイルのパス。
 
-> #### .schema
+#### .schema
 > データの構造。
 
 ### メソッド
 
-> #### .SELECT(where: { [key: string]: any }, limit?: number)
+#### .SELECT(where: { [key: string]: any }, limit?: number)
 > データの検索をキーワードを用いて行う。
 > 
 > ##### 引数
