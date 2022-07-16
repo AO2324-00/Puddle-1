@@ -191,7 +191,7 @@
 > ##### 戻り値
 > - **`string`** 実際に通知されたテキスト。
 > ```typescript
-> PuddleNoticer.Info("メッセージ");
+> PuddleNoticer.Warning("メッセージ");
 > // [Warning] メッセージ (Sun Apr 01 20XX 00:00:00 GMT+0900 (GMT+09:00))
 > ```
 
@@ -203,6 +203,6 @@
 > ##### 戻り値
 > - **`string`** 実際に通知されたテキスト。
 > ```typescript
-> PuddleNoticer.Info("メッセージ");
+> PuddleNoticer.Error("メッセージ");
 > // [Error] メッセージ (Sun Apr 01 20XX 00:00:00 GMT+0900 (GMT+09:00))
 > ```
