@@ -4,7 +4,7 @@
 JSONファイルをデータベースを操作するように処理する。
 
 ### 静的メソッド
-- [**PuddleDB.USE**](#puddledbusefilepath-string-schema-schema) JSONファイルの読み込みとスキーマの指定を行う。
+- [**PuddleDB.USE**](#puddledbuse) JSONファイルの読み込みとスキーマの指定を行う。
 
 ### ゲッター
 - [**file_path**](#file_path) データが記録されているJSONファイルのパス。
@@ -23,12 +23,12 @@ JSONファイルをデータベースを操作するように処理する。
 
 ### 静的メソッド
 
-#### PuddleDB.USE(file_path: string, schema: Schema)
+#### PuddleDB.USE
 > JSONファイルの読み込みとスキーマの指定を行う。
 > 
 > ##### 引数
-> - **file_path** JSONファイルのパス。存在しなければ作成する。
-> - **schema** データの構造。
+> - **file_path**(`string`) JSONファイルのパス。存在しなければ作成する。
+> - **schema**(`Schema`) データの構造。
 > ##### 戻り値
 > - PuddleDBのインスタンス
 > 
@@ -50,12 +50,12 @@ JSONファイルをデータベースを操作するように処理する。
 
 ### メソッド
 
-#### .SELECT(where: { [key: string]: any }, limit?: number)
+#### .SELECT
 > データの検索をキーワードを用いて行う。
 > 
 > ##### 引数
-> - **where** カラム名がキーで実際の値がバリューである連想配列。
-> - **limit** 取得するデータの最大数。
+> - **where**(`{ [key: string]: any }`) カラム名がキーで実際の値がバリューである連想配列。
+> - **limit**(`?number`) 取得するデータの最大数。
 > ##### 戻り値
 > - 第一引数(where)のカラムをすべて含むデータをまとめたPuddleDBインスタンスを返す。
 > 
