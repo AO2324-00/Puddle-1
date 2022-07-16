@@ -46,25 +46,25 @@
 ## 詳細
 
 ### 静的変数
-> #### PuddleNoticer.language
+#### PuddleNoticer.language
 > 通知の言語設定。
 > デフォルトは`"en"`
 
-> #### PuddleNoticer.output
+#### PuddleNoticer.output
 > コンソールに通知を出力するかどうか。
 > デフォルトは`true`
 
-> #### PuddleNoticer.save
+#### PuddleNoticer.save
 > 通知を記録するかどうか。
 > デフォルトは`false`
 
-> #### PuddleNoticer.destination_directory
+#### PuddleNoticer.destination_directory
 > 通知を記録する際の保存先ディレクトリパス。
 > デフォルトは`"./log"`
 
 ### 静的メソッド
 
-> #### PuddleNoticer.Request(module_name: string, notice_name: string, variables?: Variables)
+#### PuddleNoticer.Request(module_name: string, notice_name: string, variables?: Variables)
 > リクエストを通知する。
 > 
 > ##### 引数
@@ -74,7 +74,7 @@
 > ##### 戻り値
 > - 実際に通知されたテキスト。
 
-> #### PuddleNoticer.Info(module_name: string, notice_name: string, variables?: Variables)
+#### PuddleNoticer.Info(module_name: string, notice_name: string, variables?: Variables)
 > 情報を通知する。
 > 
 > ##### 引数
@@ -84,7 +84,7 @@
 > ##### 戻り値
 > - 実際に通知されたテキスト。
 
-> #### PuddleNoticer.Warning(module_name: string, notice_name: string, variables?: Variables)
+#### PuddleNoticer.Warning(module_name: string, notice_name: string, variables?: Variables)
 > 警告を通知する。
 > 
 > ##### 引数
@@ -94,7 +94,7 @@
 > ##### 戻り値
 > - 実際に通知されたテキスト。
 
-> #### PuddleNoticer.Error(module_name: string, notice_name: string, variables?: Variables)
+#### PuddleNoticer.Error(module_name: string, notice_name: string, variables?: Variables)
 > エラーを通知して処理を停止する。
 > 
 > ##### 引数
