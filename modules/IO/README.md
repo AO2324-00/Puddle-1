@@ -65,7 +65,7 @@
 > ##### 引数
 > - **path**(`string | URL`) ファイルパス。
 > - **data**(`Uint8Array`) データ。
-> - **options**(?WriteFileOptions) [WriteFileOptions](https://doc.deno.land/deno/stable/~/Deno.WriteFileOptions)
+> - **options**(`?WriteFileOptions`) [WriteFileOptions](https://doc.deno.land/deno/stable/~/Deno.WriteFileOptions)
 > ##### 戻り値
 > - (`Promise<void>`)
 
@@ -74,7 +74,7 @@
 > ##### 引数
 > - **path**(`string | URL`) ファイルパス。
 > - **data**(`Uint8Array`) データ。
-> - **options**(?WriteFileOptions) [WriteFileOptions](https://doc.deno.land/deno/stable/~/Deno.WriteFileOptions)
+> - **options**(`?WriteFileOptions`) [WriteFileOptions](https://doc.deno.land/deno/stable/~/Deno.WriteFileOptions)
 > ##### 戻り値
 > - (`void`)
 
@@ -83,7 +83,7 @@
 > ##### 引数
 > - **path**(`string | URL`) ファイルパス。
 > - **data**(`string`) データ。
-> - **options**(?WriteFileOptions) [WriteFileOptions](https://doc.deno.land/deno/stable/~/Deno.WriteFileOptions)
+> - **options**(`?WriteFileOptions`) [WriteFileOptions](https://doc.deno.land/deno/stable/~/Deno.WriteFileOptions)
 > ##### 戻り値
 > - (`Promise<void>`)
 > ```typescript
