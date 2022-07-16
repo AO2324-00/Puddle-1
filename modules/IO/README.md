@@ -26,7 +26,7 @@
 > - **path**(`string`) ファイルパス。
 > - **options**(`?ReadFileOptions`) [ReadFileOptions](https://doc.deno.land/deno/stable/~/Deno.ReadFileOptions)
 > ##### 戻り値
-> - `Promise<Uint8Array>`
+> - **`Promise<Uint8Array>`**
 
 #### Deno.readFileSync
 > ファイルの全内容をバイト配列として同期的に読み込む。
@@ -34,7 +34,7 @@
 > - **path**(`string`) ファイルパス。
 > - **options**(`?ReadFileOptions`) [ReadFileOptions](https://doc.deno.land/deno/stable/~/Deno.ReadFileOptions)
 > ##### 戻り値
-> - `Uint8Array`
+> - **`Uint8Array`**
 
 #### Deno.readTextFile
 > 非同期でファイルの全内容をutf8エンコードされた文字列として読み込む。
@@ -42,7 +42,7 @@
 > - **path**(`string`) ファイルパス。
 > - **options**(`?ReadFileOptions`) [ReadFileOptions](https://doc.deno.land/deno/stable/~/Deno.ReadFileOptions)
 > ##### 戻り値
-> - (`Promise<string>`)
+> - **`Promise<string>`**
 > ```typescript
 > const data = await Deno.readTextFile("hello.txt");
 > console.log(data);
@@ -54,7 +54,7 @@
 > - **path**(`string`) ファイルパス。
 > - **options**(`?ReadFileOptions`) [ReadFileOptions](https://doc.deno.land/deno/stable/~/Deno.ReadFileOptions)
 > ##### 戻り値
-> - (`string`)
+> - **`string`**
 > ```typescript
 > const data = Deno.readTextFileSync("hello.txt");
 > console.log(data);
@@ -67,7 +67,7 @@
 > - **data**(`Uint8Array`) データ。
 > - **options**(`?WriteFileOptions`) [WriteFileOptions](https://doc.deno.land/deno/stable/~/Deno.WriteFileOptions)
 > ##### 戻り値
-> - (`Promise<void>`)
+> - **`Promise<void>`**
 
 #### Deno.writeFileSync
 > 与えられたパスにデータを同期的に書き込む。ファイルがなければ作成する。
@@ -76,7 +76,7 @@
 > - **data**(`Uint8Array`) データ。
 > - **options**(`?WriteFileOptions`) [WriteFileOptions](https://doc.deno.land/deno/stable/~/Deno.WriteFileOptions)
 > ##### 戻り値
-> - (`void`)
+> - **`void`**
 
 #### Deno.writeTextFile
 > 非同期で文字列データを与えられたパスに書き込む。ファイルがなければ作成する。
@@ -85,7 +85,7 @@
 > - **data**(`string`) データ。
 > - **options**(`?WriteFileOptions`) [WriteFileOptions](https://doc.deno.land/deno/stable/~/Deno.WriteFileOptions)
 > ##### 戻り値
-> - (`Promise<void>`)
+> - **`Promise<void>`**
 > ```typescript
 > await Deno.writeTextFile("hello1.txt", "Hello world\n");
 > ```
@@ -97,7 +97,7 @@
 > - **data**(`string`) データ。
 > - **options**(?WriteFileOptions) [WriteFileOptions](https://doc.deno.land/deno/stable/~/Deno.WriteFileOptions)
 > ##### 戻り値
-> - (`void`)
+> - **`void`**
 > ```typescript
 > Deno.writeTextFileSync("hello1.txt", "Hello world\n");
 > ```
@@ -123,7 +123,7 @@
 > - **template_text**(`string`) 変数を含んだ文字列。例：`"ABC{{var}}GHI"`
 > - **variables**(`?Valiables`) 変数とその値を格納した連想配列。例：`{ var: "DEF" }`
 > ##### 戻り値
-> - (`string`) 変数を代入した文字列。例：`"ABCDEFGHI"`
+> - **`string`** 変数を代入した文字列。例：`"ABCDEFGHI"`
 > 
 > ```typescript
 > const template_text = `ABC{{var}}GHI`;
@@ -177,7 +177,7 @@
 > ##### 引数
 > - **message**(`string`) メッセージ。
 > ##### 戻り値
-> - (`string`) 実際に通知されたテキスト。
+> - **`string`** 実際に通知されたテキスト。
 > ```typescript
 > PuddleNoticer.Info("メッセージ");
 > // [Info] メッセージ (Sun Apr 01 20XX 00:00:00 GMT+0900 (GMT+09:00))
@@ -189,7 +189,7 @@
 > ##### 引数
 > - **message**(`string`) メッセージ。
 > ##### 戻り値
-> - (`string`) 実際に通知されたテキスト。
+> - **`string`** 実際に通知されたテキスト。
 > ```typescript
 > PuddleNoticer.Info("メッセージ");
 > // [Warning] メッセージ (Sun Apr 01 20XX 00:00:00 GMT+0900 (GMT+09:00))
@@ -201,7 +201,7 @@
 > ##### 引数
 > - **message**(`string`) メッセージ。
 > ##### 戻り値
-> - (`string`) 実際に通知されたテキスト。
+> - **`string`** 実際に通知されたテキスト。
 > ```typescript
 > PuddleNoticer.Info("メッセージ");
 > // [Error] メッセージ (Sun Apr 01 20XX 00:00:00 GMT+0900 (GMT+09:00))
