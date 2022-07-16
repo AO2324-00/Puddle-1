@@ -10,7 +10,7 @@
 文字列の解析や変換を行う。
 
 ### 静的メソッド
-- [**PuddleParser.assignToVariables**](#puddleparserassigntovariablestemplatetext-string-variables-variables) 変数を含む文字列に値を代入する。
+- [**PuddleParser.assignToVariables**](#puddleparserassigntovariablestemplate_text-string-variables-variables) 変数を含む文字列に値を代入する。
 
 ## 詳細
 
@@ -43,7 +43,7 @@
 - [**PuddleNoticer.language**](#puddlenoticerlanguage) 通知の言語設定。
 - [**PuddleNoticer.output**](#puddlenoticeroutput) コンソールに通知を出力するかどうか。
 - [**PuddleNoticer.save**](#puddlenoticersave) 通知を記録するかどうか。
-- [**PuddleNoticer.destination_directory**](#puddlenoticerdestinationdirectory) 通知を記録する際の保存先ディレクトリパス。
+- [**PuddleNoticer.destination_directory**](#puddlenoticerdestination_directory) 通知を記録する際の保存先ディレクトリパス。
 
 ### 静的メソッド
 - [**PuddleNoticer.Info**](#puddlenoticerinfomessage-string) 情報を通知する。

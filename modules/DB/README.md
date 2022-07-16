@@ -7,7 +7,7 @@ JSONファイルをデータベースを操作するように処理する。
 - [**PuddleDB.USE**](#puddledbusefilepath-string-schema-schema) JSONファイルの読み込みとスキーマの指定を行う。
 
 ### ゲッター
-- [**file_path**](#filepath) データが記録されているJSONファイルのパス。
+- [**file_path**](#file_path) データが記録されているJSONファイルのパス。
 - [**schema**](#schema) データの構造。
 
 ### メソッド
