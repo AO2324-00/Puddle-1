@@ -1,13 +1,14 @@
 # クラス PuddleDB
 
 ## 概要
+JSONファイルをデータベースを操作するように処理する。
 
 ### 静的メソッド
-- **PuddleDB.USE** JSONファイルの読み込みとスキーマの指定を行う。
+- [**PuddleDB.USE**](#puddledbusefilepath-string-schema-schema) JSONファイルの読み込みとスキーマの指定を行う。
 
 ### ゲッター
-- **file_path** データが記録されているJSONファイルのパス。
-- **schema** データの構造。
+- [**file_path**](#filepath) データが記録されているJSONファイルのパス。
+- [**schema**](#schema) データの構造。
 
 ### メソッド
 - **SELECT** データの検索をキーワードを用いて行う。

@@ -82,8 +82,8 @@ function SaveNotice(label: NotificationLabel, notice_text: string, datetime: str
 }
 
 /**
- * フレームワークが発する情報の通知や記録を行う。
- * Notify and record information emitted by the framework.
+ * メッセージの通知や記録を行う。
+ * Notify and record messages.
  */
 export class PuddleNoticer {
 
