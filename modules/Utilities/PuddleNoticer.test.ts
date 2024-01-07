@@ -1,4 +1,4 @@
-import * as TEST from "https://deno.land/std@0.148.0/testing/asserts.ts";
+import * as TEST from "https://deno.land/std@0.210.0/assert/mod.ts";
 import { PuddleNoticer } from "./PuddleNoticer.ts";
 
 Deno.test({

@@ -1,0 +1,18 @@
+<html>
+
+    Hello world!
+    {{5+3}}
+    {{data.test}}
+    {{new Date()}}
+    {{ await new Promise(resolve=>setTimeout(resolve, 3000)) }}
+
+</html>
+<style>
+    div {
+        background-color: red;
+    }
+</style>
+<script>
+    {{component("./test3.html")}}
+    console.log("Hello world!");
+</script>

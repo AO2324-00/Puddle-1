@@ -10,8 +10,8 @@ function checkSchema(data: any, schema: Schema) {
         const isNotNull = schema[key].includes("NOT NULL");
         if(!isUnique && !isNotNull) continue;
         const rows = data.map(column=>column[key]);
-        if(isUnique && new Set(rows).size != rows.length) throw Error(`\n[PuddleJSON]\nSchema error. There is a duplicate element in the "${key}" field.\nスキーマエラーです。"${key}"に重複があります。`);
-        if(isNotNull && rows.filter(v=>v).length != rows.length) throw Error(`\n[PuddleJSON]\nSchema error. "${key}" has null object.\nスキーマエラーです。"${key}"はNULLオブジェクトを持っています。`);
+        if(isUnique && new Set(rows).size != rows.length) throw Error(`\n[PuddleJson]\nSchema error. There is a duplicate element in the "${key}" field.\nスキーマエラーです。"${key}"に重複があります。`);
+        if(isNotNull && rows.filter(v=>v).length != rows.length) throw Error(`\n[PuddleJson]\nSchema error. "${key}" has null object.\nスキーマエラーです。"${key}"はNULLオブジェクトを持っています。`);
     }
     data = data.map(row=>{
         for(let key in schema) if(!row[key]) row[key] = null;
@@ -20,13 +20,13 @@ function checkSchema(data: any, schema: Schema) {
     return data;
 }
 
-export class PuddleDB {
+export class PuddleJson {
 
-    static TABLE: { [key: string]: PuddleDB; } = {};
+    static TABLE: { [key: string]: PuddleJson; } = {};
 
-    static USE(file_path: string, schema: Schema): PuddleDB {
-        if(Object.keys(PuddleDB.TABLE).includes(file_path)) return PuddleDB.TABLE[file_path];
-        return new PuddleDB(file_path, schema);
+    static USE(file_path: string, schema: Schema): PuddleJson {
+        if(Object.keys(PuddleJson.TABLE).includes(file_path)) return PuddleJson.TABLE[file_path];
+        return new PuddleJson(file_path, schema);
     }
 
     #file_path: string;
@@ -35,7 +35,7 @@ export class PuddleDB {
     constructor(file_path: string, schema: Schema) {
         this.#file_path = file_path;
         this.#schema = schema;
-        PuddleDB.TABLE[file_path] = this;
+        PuddleJson.TABLE[file_path] = this;
     }
 
     get file_path(): string {
@@ -46,4 +46,4 @@ export class PuddleDB {
         return this.#schema
     }
 
- }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    ((component("../meta.html")))
+    <title>((data.title))</title>
+</head>
+<body>
+    ((component("./header.html", data.header)))
+    ((component("./body.html")))
+    ((data.card_data.map(d=>components.card(d)).join()))
+    ((compornent("./card.html", ...data.cards)))
+    (( 2 + 3 * 7 ))
+</body>
+</html>
+<style>
+button {
+    color: ((data.color));
+}
+    
+</style>
+<script>
+    const title = ((data.title));
+</script>

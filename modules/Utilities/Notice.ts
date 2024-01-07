@@ -3,9 +3,9 @@ interface Notice {
 }
 
 export const ja: Notice = {
-    Test: "テスト。{{var}}",
+    Test: "テスト。((var))",
 }
 
 export const en: Notice = {
-    Test: "Testing.{{var}}",
+    Test: "Testing.((var))",
 }

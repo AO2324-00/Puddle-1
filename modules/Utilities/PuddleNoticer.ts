@@ -163,7 +163,7 @@ export class PuddleNoticer {
      * @param notice_name 通知名称。
      * @param variables 変数。
      */
-     static SystemRequest(module_name: string, notice_name: string, variables: Variables = {}) {
+    static SystemRequest(module_name: string, notice_name: string, variables: Variables = {}) {
         const label = new NotificationLabel("[Request]", "Cyan");
         const notice_text: string = GetNoticeText(module_name, notice_name, variables);
         return PuddleNoticer.Notify(notice_text, label);
